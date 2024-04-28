@@ -1,5 +1,6 @@
 const sliderValue = document.getElementById('sliderValue');
-const mySlider = document.getElementById('mySlider');const includeSymbols = document.getElementById('includeSymbols');
+const mySlider = document.getElementById('mySlider');
+const includeSymbols = document.getElementById('includeSymbols');
 const cubeStrength = document.querySelectorAll('.cube');
 const checkbox = document.querySelectorAll('input[type=checkbox]')
 const passwordName = document.getElementById('passwordName');
