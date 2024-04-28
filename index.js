@@ -54,12 +54,11 @@ function creatingPassword(){
   for (let i = 0; i < passwordLength; i++) {
     let randomIndex = charOptions[Math.floor(Math.random() * charCategories)];
     let result = randomIndex[Math.floor(Math.random() * randomIndex.length)];
-
-    errorCheckbox();
     passwordName.style.color = "white";
     password += result;
   }
 
+  errorCheckbox();
   passwordName.textContent = password;
   return password;
 };
