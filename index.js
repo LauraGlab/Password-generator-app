@@ -54,6 +54,7 @@ function creatingPassword(){
     let randomIndex = charOptions[Math.floor(Math.random() * charCategories)];
     let result = randomIndex[Math.floor(Math.random() * randomIndex.length)];
 
+    errorCheckbox();
     passwordName.style.color = "white";
     password += result;
   }
@@ -76,7 +77,6 @@ function errorCheckbox(){
 function generatePassword(){
   strengthBar();
   creatingPassword();
-  errorCheckbox(); 
 }
 
 //Styling strength bar
@@ -88,7 +88,7 @@ function resetStrength(){
   allCubes.forEach((currentElement) => (currentElement.className += " cube"));
 }
 
-function strengthBar(resetStrength){
+function strengthBar(){
   const passwordLength = mySlider.value;
   const options = optionsOfCheck();
   const errorCheck = document.getElementById("errorCheckbox");
