@@ -75,8 +75,6 @@ function errorCheckbox(){
 //Generating password
 function generatePassword(){
   strengthBar();
-  resetStrength();
-  strengthBar();
   creatingPassword();
   errorCheckbox(); 
 }
@@ -97,6 +95,8 @@ function strengthBar(resetStrength){
   const weak = allCubes.slice(0, 2);
   const medium = allCubes.slice(0, 3);
   const strong = allCubes.slice(0,4);
+
+  resetStrength();
 
 if(options.length === 0){
   errorCheck.textContent = "Choose at least one option";
